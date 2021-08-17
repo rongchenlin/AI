@@ -1,0 +1,742 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>《TensorFlow深度学习》笔记（二） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="《TensorFlow深度学习》笔记（三）.html" />
+    
+    
+    <link rel="prev" href="《TensorFlow深度学习》笔记（一）.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    人工智能学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Tensorflow学习.html">
+            
+                <a href="Tensorflow学习.html">
+            
+                    
+                    Tensorflow学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="《TensorFlow深度学习》笔记（一）.html">
+            
+                <a href="《TensorFlow深度学习》笔记（一）.html">
+            
+                    
+                    《TensorFlow深度学习》笔记（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="《TensorFlow深度学习》笔记（二）.html">
+            
+                <a href="《TensorFlow深度学习》笔记（二）.html">
+            
+                    
+                    《TensorFlow深度学习》笔记（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="《TensorFlow深度学习》笔记（三）.html">
+            
+                <a href="《TensorFlow深度学习》笔记（三）.html">
+            
+                    
+                    《TensorFlow深度学习》笔记（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="TensorFlow常用函数.html">
+            
+                <a href="TensorFlow常用函数.html">
+            
+                    
+                    TensorFlow常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../自然语言处理/自然语言处理.html">
+            
+                <a href="../自然语言处理/自然语言处理.html">
+            
+                    
+                    自然语言处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../自然语言处理/NLP简介.html">
+            
+                <a href="../自然语言处理/NLP简介.html">
+            
+                    
+                    NLP简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../自然语言处理/常见的神经网络模型.html">
+            
+                <a href="../自然语言处理/常见的神经网络模型.html">
+            
+                    
+                    常见的神经网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../自然语言处理/实践NLP项目.html">
+            
+                <a href="../自然语言处理/实践NLP项目.html">
+            
+                    
+                    实践NLP项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../计算机视觉/计算机视觉.html">
+            
+                <a href="../计算机视觉/计算机视觉.html">
+            
+                    
+                    计算机视觉
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../计算机视觉/CNN的演变和特点总结.html">
+            
+                <a href="../计算机视觉/CNN的演变和特点总结.html">
+            
+                    
+                    CNN的演变和特点总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../计算机视觉/目标检测.html">
+            
+                <a href="../计算机视觉/目标检测.html">
+            
+                    
+                    目标检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../计算机视觉/MobileNet网络.html">
+            
+                <a href="../计算机视觉/MobileNet网络.html">
+            
+                    
+                    MobileNet网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../计算机视觉/媒体识别和理解.html">
+            
+                <a href="../计算机视觉/媒体识别和理解.html">
+            
+                    
+                    媒体识别和理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../数据挖掘/数据挖掘简介.html">
+            
+                <a href="../数据挖掘/数据挖掘简介.html">
+            
+                    
+                    数据挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../推荐系统/推荐系统简介.html">
+            
+                <a href="../推荐系统/推荐系统简介.html">
+            
+                    
+                    推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >《TensorFlow深度学习》笔记（二）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x300A;tensorflow&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x300B;&#x7B14;&#x8BB0;&#xFF08;&#x4E8C;&#xFF09;">&#x300A;TensorFlow&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x300B;&#x7B14;&#x8BB0;&#xFF08;&#x4E8C;&#xFF09;</h1>
+<h2 id="&#x53CD;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;">&#x53CD;&#x5411;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;</h2>
+<h3 id="&#x6FC0;&#x6D3B;&#x51FD;&#x6570;">&#x6FC0;&#x6D3B;&#x51FD;&#x6570;</h3>
+<ul>
+<li><pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np <span class="hljs-comment"># &#x5BFC;&#x5165; numpy &#x5E93; </span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sigmoid</span><span class="hljs-params">(x)</span>:</span> <span class="hljs-comment"># &#x5B9E;&#x73B0; sigmoid &#x51FD;&#x6570;     </span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + np.exp(-x)) 
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">derivative</span><span class="hljs-params">(x)</span>:</span>  <span class="hljs-comment"># sigmoid &#x5BFC;&#x6570;&#x7684;&#x8BA1;&#x7B97;     </span>
+    <span class="hljs-comment"># sigmoid &#x51FD;&#x6570;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7531;&#x624B;&#x52A8;&#x63A8;&#x5BFC;&#x800C;&#x5F97; </span>
+    <span class="hljs-keyword">return</span> sigmoid(x)*(<span class="hljs-number">1</span>-sigmoid(x))
+
+<span class="hljs-comment">##############################################################################</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">derivative</span><span class="hljs-params">(x)</span>:</span>  <span class="hljs-comment"># ReLU &#x51FD;&#x6570;&#x7684;&#x5BFC;&#x6570;     </span>
+    d = np.array(x, copy=<span class="hljs-keyword">True</span>)  <span class="hljs-comment"># &#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x68AF;&#x5EA6;&#x7684;&#x5F20;&#x91CF;     </span>
+    d[x &lt; <span class="hljs-number">0</span>] = <span class="hljs-number">0</span>  <span class="hljs-comment"># &#x5143;&#x7D20;&#x4E3A;&#x8D1F;&#x7684;&#x5BFC;&#x6570;&#x4E3A; 0     </span>
+    d[x &gt;= <span class="hljs-number">0</span>] = <span class="hljs-number">1</span>  <span class="hljs-comment"># &#x5143;&#x7D20;&#x4E3A;&#x6B63;&#x7684;&#x5BFC;&#x6570;&#x4E3A; 1     </span>
+    <span class="hljs-keyword">return</span> d 
+
+<span class="hljs-comment">##############################################################################</span>
+ <span class="hljs-comment"># &#x5176;&#x4E2D; p &#x4E3A; LeakyReLU &#x7684;&#x8D1F;&#x534A;&#x6BB5;&#x659C;&#x7387;&#xFF0C;&#x4E3A;&#x8D85;&#x53C2;&#x6570; def derivative(x, p): </span>
+    dx = np.ones_like(x)  <span class="hljs-comment"># &#x521B;&#x5EFA;&#x68AF;&#x5EA6;&#x5F20;&#x91CF;&#xFF0C;&#x5168;&#x90E8;&#x521D;&#x59CB;&#x5316;&#x4E3A; 1     </span>
+    dx[x &lt; <span class="hljs-number">0</span>] = p  <span class="hljs-comment"># &#x5143;&#x7D20;&#x4E3A;&#x8D1F;&#x7684;&#x5BFC;&#x6570;&#x4E3A; p </span>
+    <span class="hljs-keyword">return</span> dx 
+<span class="hljs-comment">##############################################################################</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sigmoid</span><span class="hljs-params">(x)</span>:</span>  <span class="hljs-comment"># sigmoid &#x51FD;&#x6570;&#x5B9E;&#x73B0;     return 1 / (1 + np.exp(-x))  </span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tanh</span><span class="hljs-params">(x)</span>:</span>  <span class="hljs-comment"># tanh &#x51FD;&#x6570;&#x5B9E;&#x73B0;     return 2*sigmoid(2*x) - 1 </span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">derivative</span><span class="hljs-params">(x)</span>:</span>  <span class="hljs-comment"># tanh &#x5BFC;&#x6570;&#x5B9E;&#x73B0; </span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>-tanh(x)**<span class="hljs-number">2</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="keras-&#x9AD8;&#x5C42;&#x63A5;&#x53E3;">Keras &#x9AD8;&#x5C42;&#x63A5;&#x53E3;</h2>
+<h3 id="&#x5E38;&#x89C1;&#x7F51;&#x7EDC;&#x5C42;&#x7C7B;">&#x5E38;&#x89C1;&#x7F51;&#x7EDC;&#x5C42;&#x7C7B;</h3>
+<ul>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x5728; tf.keras.layers &#x547D;&#x540D;&#x7A7A;&#x95F4;(&#x4E0B;&#x6587;&#x4F7F;&#x7528; layers &#x6307;&#x4EE3; tf.keras.layers)&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x5E38;&#x89C1;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x7C7B;&#xFF0C;&#x5982;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#x3001;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x5C42;&#x3001;&#x6C60;&#x5316;&#x5C42;&#x3001;&#x5377;&#x79EF;&#x5C42;&#x3001;&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x7B49;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x7F51;&#x7EDC; &#x5C42;&#x7C7B;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x521B;&#x5EFA;&#x65F6;&#x6307;&#x5B9A;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x76F8;&#x5173;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x8C03;&#x7528;__call__&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x524D;&#x5411;&#x8BA1;&#x7B97;&#x3002;&#x5728; &#x8C03;&#x7528;__call__&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;Keras &#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x5C42;&#x7684;&#x524D;&#x5411;&#x4F20;&#x64AD;&#x903B;&#x8F91;&#xFF0C;&#x8FD9;&#x4E9B;&#x903B;&#x8F91;&#x4E00;&#x822C;&#x5B9E;&#x73B0;&#x5728;&#x7C7B;&#x7684; call &#x51FD;&#x6570;&#x4E2D;.</span>
+<span class="hljs-comment"># &#x4EE5; Softmax &#x5C42;&#x4E3A;&#x4F8B;:</span>
+
+<span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf 
+<span class="hljs-comment"># &#x5BFC;&#x5165; keras &#x6A21;&#x578B;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; import keras&#xFF0C;&#x5B83;&#x5BFC;&#x5165;&#x7684;&#x662F;&#x6807;&#x51C6;&#x7684; Keras &#x5E93; </span>
+<span class="hljs-keyword">from</span> tensorflow <span class="hljs-keyword">import</span> keras 
+<span class="hljs-keyword">from</span> tensorflow.keras <span class="hljs-keyword">import</span> layers <span class="hljs-comment"># &#x5BFC;&#x5165;&#x5E38;&#x89C1;&#x7F51;&#x7EDC;&#x5C42;&#x7C7B; </span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA; Softmax &#x5C42;&#xFF0C;&#x5E76;&#x8C03;&#x7528;__call__&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x524D;&#x5411;&#x8BA1;&#x7B97;</span>
+x = tf.constant([<span class="hljs-number">2.</span>,<span class="hljs-number">1.</span>,<span class="hljs-number">0.1</span>])  <span class="hljs-comment"># &#x521B;&#x5EFA;&#x8F93;&#x5165;&#x5F20;&#x91CF; </span>
+layer = layers.Softmax(axis=<span class="hljs-number">-1</span>)  <span class="hljs-comment"># &#x521B;&#x5EFA; Softmax &#x5C42; </span>
+out = layer(x)  <span class="hljs-comment"># &#x8C03;&#x7528; softmax &#x524D;&#x5411;&#x8BA1;&#x7B97;&#xFF0C;&#x8F93;&#x51FA;&#x4E3A; out</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x7F51;&#x7EDC;&#x5BB9;&#x5668;">&#x7F51;&#x7EDC;&#x5BB9;&#x5668;</h3>
+<ul>
+<li><p>&#x901A;&#x8FC7; Keras &#x63D0;&#x4F9B;&#x7684;&#x7F51;&#x7EDC;&#x5BB9;&#x5668; Sequential &#x5C06;&#x591A;&#x4E2A; &#x7F51;&#x7EDC;&#x5C42;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x4E00;&#x6B21;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x6570;&#x636E;&#x4ECE;&#x7B2C;&#x4E00;&#x5C42;&#x5230; &#x6700;&#x672B;&#x5C42;&#x7684;&#x987A;&#x5E8F;&#x4F20;&#x64AD;&#x8FD0;&#x7B97;&#x3002; </p>
+</li>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x4F8B;&#x5982;&#xFF0C;2 &#x5C42;&#x7684;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#x52A0;&#x4E0A;&#x5355;&#x72EC;&#x7684;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x5C42;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Sequential &#x5BB9;&#x5668;&#x5C01;&#x88C5;&#x4E3A;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x3002; </span>
+<span class="hljs-comment"># &#x5BFC;&#x5165; Sequential &#x5BB9;&#x5668;  </span>
+<span class="hljs-keyword">from</span> tensorflow.keras <span class="hljs-keyword">import</span> layers, Sequential 
+network = Sequential([ <span class="hljs-comment"># &#x5C01;&#x88C5;&#x4E3A;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;     </span>
+    layers.Dense(<span class="hljs-number">3</span>, activation=<span class="hljs-keyword">None</span>),  <span class="hljs-comment"># &#x5168;&#x8FDE;&#x63A5;&#x5C42;&#xFF0C;&#x6B64;&#x5904;&#x4E0D;&#x4F7F;&#x7528;&#x6FC0;&#x6D3B;&#x51FD;&#x6570; </span>
+    layers.ReLU(), <span class="hljs-comment"># &#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x5C42;     </span>
+    layers.Dense(<span class="hljs-number">2</span>, activation=<span class="hljs-keyword">None</span>), <span class="hljs-comment"># &#x5168;&#x8FDE;&#x63A5;&#x5C42;&#xFF0C;&#x6B64;&#x5904;&#x4E0D;&#x4F7F;&#x7528;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;</span>
+    layers.ReLU() <span class="hljs-comment"># &#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x5C42; </span>
+]) 
+x = tf.random.normal([<span class="hljs-number">4</span>,<span class="hljs-number">3</span>]) 
+out = network(x) <span class="hljs-comment"># &#x8F93;&#x5165;&#x4ECE;&#x7B2C;&#x4E00;&#x5C42;&#x5F00;&#x59CB;&#xFF0C;&#x9010;&#x5C42;&#x4F20;&#x64AD;&#x81F3;&#x8F93;&#x51FA;&#x5C42;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8F93;&#x51FA;&#x5C42;&#x7684;&#x8F93;&#x51FA; </span>
+
+<span class="hljs-comment">##############################################################################</span>
+<span class="hljs-comment"># Sequential &#x5BB9;&#x5668;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; add()&#x65B9;&#x6CD5;&#x7EE7;&#x7EED;&#x8FFD;&#x52A0;&#x65B0;&#x7684;&#x7F51;&#x7EDC;&#x5C42;&#xFF0C;&#x5B9E;&#x73B0;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x7684;&#x529F;&#x80FD;&#xFF1A; </span>
+layers_num = <span class="hljs-number">2</span> <span class="hljs-comment"># &#x5806;&#x53E0; 2 &#x6B21; </span>
+network = Sequential([]) <span class="hljs-comment"># &#x5148;&#x521B;&#x5EFA;&#x7A7A;&#x7684;&#x7F51;&#x7EDC;&#x5BB9;&#x5668; </span>
+<span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(layers_num): 
+    network.add(layers.Dense(<span class="hljs-number">3</span>)) <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x5168;&#x8FDE;&#x63A5;&#x5C42; </span>
+    network.add(layers.ReLU())<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x5C42; </span>
+network.build(input_shape=(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>)) <span class="hljs-comment"># &#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x53C2;&#x6570; </span>
+network.summary()
+<span class="hljs-comment"># &#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x4EFB;&#x610F;&#x7684; layers_num &#x53C2;&#x6570;&#x5373;&#x53EF;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x5C42;&#x6570;&#x7684;&#x7F51;&#x7EDC;&#x7ED3;&#x6784;&#xFF0C;&#x5728;&#x5B8C;&#x6210;&#x7F51;&#x7EDC;&#x521B;&#x5EFA; &#x65F6;&#xFF0C;&#x7F51;&#x7EDC;&#x5C42;&#x7C7B;&#x5E76;&#x6CA1;&#x6709;&#x521B;&#x5EFA;&#x5185;&#x90E8;&#x6743;&#x503C;&#x5F20;&#x91CF;&#x7B49;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x6B64;&#x65F6;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x7C7B;&#x7684; build &#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A; &#x8F93;&#x5165;&#x5927;&#x5C0F;&#xFF0C;&#x5373;&#x53EF;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x5C42;&#x7684;&#x5185;&#x90E8;&#x5F20;&#x91CF;&#x3002;&#x901A;&#x8FC7; summary()&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x6253;&#x5370;&#x51FA;&#x7F51;&#x7EDC;&#x7ED3; &#x6784;&#x548C;&#x53C2;&#x6570;&#x91CF;</span>
+
+<span class="hljs-comment">##############################################################################</span>
+<span class="hljs-comment"># Sequential &#x5BF9;&#x8C61;&#x7684; trainable_variables &#x548C; variables &#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x5C42;&#x7684;&#x5F85;&#x4F18;&#x5316;&#x5F20;&#x91CF;&#x5217;&#x8868; &#x548C;&#x5168;&#x90E8;&#x5F20;&#x91CF;&#x5217;&#x8868;</span>
+
+ <span class="hljs-comment"># &#x6253;&#x5370;&#x7F51;&#x7EDC;&#x7684;&#x5F85;&#x4F18;&#x5316;&#x53C2;&#x6570;&#x540D;&#x4E0E; shape </span>
+<span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> network.trainable_variables: 
+print(p.name, p.shape) <span class="hljs-comment"># &#x53C2;&#x6570;&#x540D;&#x548C;&#x5F62;&#x72B6;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x6A21;&#x578B;&#x88C5;&#x914D;&#x3001;&#x8BAD;&#x7EC3;&#x4E0E;&#x6D4B;&#x8BD5;">&#x6A21;&#x578B;&#x88C5;&#x914D;&#x3001;&#x8BAD;&#x7EC3;&#x4E0E;&#x6D4B;&#x8BD5;</h3>
+<ul>
+<li><p>&#x6A21;&#x578B;&#x88C5;&#x914D; &#xFF1A;</p>
+<ul>
+<li><p>&#x5728; Keras &#x4E2D;&#xFF0C;&#x6709; 2 &#x4E2A;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#x7684;&#x7C7B;&#xFF1A;keras.Model &#x548C; keras.layers.Layer &#x7C7B;&#x3002;&#x5176;&#x4E2D; Layer &#x7C7B;&#x662F;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x6BCD;&#x7C7B;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x6DFB;&#x52A0;&#x6743;&#x503C;&#x3001;&#x7BA1;&#x7406;&#x6743;&#x503C;&#x5217;&#x8868;&#x7B49;&#x3002; Model &#x7C7B;&#x662F;&#x7F51;&#x7EDC;&#x7684;&#x6BCD;&#x7C7B;&#xFF0C;&#x9664;&#x4E86;&#x5177;&#x6709; Layer &#x7C7B;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8FD8;&#x6DFB;&#x52A0;&#x4E86;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x3001;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x3001;&#x8BAD;&#x7EC3; &#x4E0E;&#x6D4B;&#x8BD5;&#x6A21;&#x578B;&#x7B49;&#x4FBF;&#x6377;&#x529F;&#x80FD;&#x3002;Sequential &#x4E5F;&#x662F; Model &#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x56E0;&#x6B64;&#x5177;&#x6709; Model &#x7C7B;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#x3002;</p>
+</li>
+<li><pre><code class="lang-python"><span class="hljs-comment"># MNIST &#x624B;&#x5199;&#x6570;&#x5B57;&#x56FE;&#x7247;&#x8BC6;</span>
+<span class="hljs-comment"># &#x521B;&#x5EFA; 5 &#x5C42;&#x7684;&#x5168;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC; </span>
+network = Sequential([layers.Dense(<span class="hljs-number">256</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                      layers.Dense(<span class="hljs-number">128</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                                   layers.Dense(<span class="hljs-number">64</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                      
+     layers.Dense(<span class="hljs-number">32</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                                       layers.Dense(<span class="hljs-number">10</span>)]) 
+network.build(input_shape=(<span class="hljs-number">4</span>, <span class="hljs-number">28</span>*<span class="hljs-number">28</span>)) 
+network.summary() 
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x540E;&#xFF0C;&#x6B63;&#x5E38;&#x7684;&#x6D41;&#x7A0B;&#x662F;&#x5FAA;&#x73AF;&#x8FED;&#x4EE3;&#x6570;&#x636E;&#x96C6;&#x591A;&#x4E2A; Epoch&#xFF0C;&#x6BCF;&#x6B21;&#x6309;&#x6279;&#x4EA7;&#x751F;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x3001;&#x524D;&#x5411;&#x8BA1; &#x7B97;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x8BEF;&#x5DEE;&#x503C;&#xFF0C;&#x5E76;&#x53CD;&#x5411;&#x4F20;&#x64AD;&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#x3001;&#x66F4;&#x65B0;&#x7F51;&#x7EDC;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E00;&#x90E8;&#x5206; &#x903B;&#x8F91;&#x7531;&#x4E8E;&#x975E;&#x5E38;&#x901A;&#x7528;&#xFF0C;&#x5728; Keras &#x4E2D;&#x63D0;&#x4F9B;&#x4E86; compile()&#x548C; fit()&#x51FD;&#x6570;&#x65B9;&#x4FBF;&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x903B;&#x8F91;&#x3002;&#x9996;&#x5148;&#x901A;&#x8FC7; compile &#x51FD;&#x6570;&#x6307;&#x5B9A;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;&#x7684;&#x4F18;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x8BC4;&#x4EF7;&#x6307;&#x6807;&#x7B49;&#x8BBE;&#x5B9A;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x79F0;&#x4E3A;&#x88C5;&#x914D;</span>
+&#x3002;
+<span class="hljs-comment"># &#x5BFC;&#x5165;&#x4F18;&#x5316;&#x5668;&#xFF0C;&#x635F;&#x5931;&#x51FD;&#x6570;&#x6A21;&#x5757; </span>
+<span class="hljs-keyword">from</span> tensorflow.keras <span class="hljs-keyword">import</span> optimizers,losses  
+<span class="hljs-comment"># &#x6A21;&#x578B;&#x88C5;&#x914D; </span>
+<span class="hljs-comment"># &#x91C7;&#x7528; Adam &#x4F18;&#x5316;&#x5668;&#xFF0C;&#x5B66;&#x4E60;&#x7387;&#x4E3A; 0.01;&#x91C7;&#x7528;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5305;&#x542B;Softmax </span>
+network.compile(optimizer=optimizers.Adam(lr=<span class="hljs-number">0.01</span>),         loss=losses.CategoricalCrossentropy(from_logits=<span class="hljs-keyword">True</span>), 
+       metrics=[<span class="hljs-string">&apos;accuracy&apos;</span>] <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x6D4B;&#x91CF;&#x6307;&#x6807;&#x4E3A;&#x51C6;&#x786E;&#x7387; </span>
+)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>&#x6A21;&#x578B;&#x8BAD;&#x7EC3; </p>
+<ul>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x6A21;&#x578B;&#x88C5;&#x914D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x901A;&#x8FC7; fit()&#x51FD;&#x6570;&#x9001;&#x5165;&#x5F85;&#x8BAD;&#x7EC3;&#x7684;&#x6570;&#x636E;&#x96C6;&#x548C;&#x9A8C;&#x8BC1;&#x7528;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65; &#x79F0;&#x4E3A;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x3002;</span>
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x8BAD;&#x7EC3;&#x96C6;&#x4E3A; train_db&#xFF0C;&#x9A8C;&#x8BC1;&#x96C6;&#x4E3A; val_db,&#x8BAD;&#x7EC3; 5 &#x4E2A; epochs&#xFF0C;&#x6BCF; 2 &#x4E2A; epoch &#x9A8C;&#x8BC1;&#x4E00;&#x6B21; # &#x8FD4;&#x56DE;&#x8BAD;&#x7EC3;&#x8F68;&#x8FF9;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x5728; history &#x5BF9;&#x8C61;&#x4E2D; </span>
+history = network.fit(train_db, epochs=<span class="hljs-number">5</span>, validation_data=val_db, validation_freq=<span class="hljs-number">2</span>) 
+<span class="hljs-comment"># &#x8FD0;&#x884C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x7F51;&#x7EDC;&#x7684;&#x8BAD;&#x7EC3;&#x4E0E;&#x9A8C;&#x8BC1;&#x7684;&#x529F;&#x80FD;&#xFF0C;fit &#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7684;&#x6570;&#x636E;&#x8BB0;&#x5F55; history&#xFF0C;&#x5176;&#x4E2D; history.history &#x4E3A;&#x5B57;&#x5178;&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684; loss&#x3001;&#x6D4B;&#x91CF;&#x6307;&#x6807;&#x7B49;&#x8BB0;&#x5F55;&#x9879;&#xFF0C; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x8FD9;&#x4E9B;&#x8BAD;&#x7EC3;&#x6570;&#x636E;</span>
+history.history <span class="hljs-comment"># &#x6253;&#x5370;&#x8BAD;&#x7EC3;&#x8BB0;&#x5F55;</span>
+</code></pre>
+<p>```python</p>
+<h1 id="mnist-&#x624B;&#x5199;&#x6570;&#x5B57;&#x56FE;&#x7247;&#x8BC6;">MNIST &#x624B;&#x5199;&#x6570;&#x5B57;&#x56FE;&#x7247;&#x8BC6;</h1>
+<h1 id="&#x521B;&#x5EFA;-5-&#x5C42;&#x7684;&#x5168;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;">&#x521B;&#x5EFA; 5 &#x5C42;&#x7684;&#x5168;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;</h1>
+<p>network = Sequential([layers.Dense(256, activation=&apos;relu&apos;),                      layers.Dense(128, activation=&apos;relu&apos;),                                   layers.Dense(64, activation=&apos;relu&apos;),                      </p>
+<pre><code>layers.Dense(32, activation=&apos;relu&apos;),                                       layers.Dense(10)]) 
+</code></pre><p>network.build(input_shape=(4, 28*28)) 
+network.summary() </p>
+</li>
+</ul>
+<h1 id="&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x540E;&#xFF0C;&#x6B63;&#x5E38;&#x7684;&#x6D41;&#x7A0B;&#x662F;&#x5FAA;&#x73AF;&#x8FED;&#x4EE3;&#x6570;&#x636E;&#x96C6;&#x591A;&#x4E2A;-epoch&#xFF0C;&#x6BCF;&#x6B21;&#x6309;&#x6279;&#x4EA7;&#x751F;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x3001;&#x524D;--&#x5411;&#x8BA1;-&#x7B97;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x8BEF;&#x5DEE;&#x503C;&#xFF0C;&#x5E76;&#x53CD;&#x5411;&#x4F20;&#x64AD;&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#x3001;&#x66F4;&#x65B0;&#x7F51;&#x7EDC;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E00;--&#x90E8;&#x5206;-&#x903B;&#x8F91;&#x7531;&#x4E8E;&#x975E;&#x5E38;&#x901A;&#x7528;&#xFF0C;&#x5728;-keras-&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;-compile&#x548C;-fit&#x51FD;&#x6570;&#x65B9;&#x4FBF;&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x903B;&#x8F91;&#x3002;&#x9996;&#x5148;&#x901A;&#x8FC7;-compile-&#x51FD;&#x6570;&#x6307;&#x5B9A;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;&#x7684;&#x4F18;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x8BC4;&#x4EF7;&#x6307;&#x6807;&#x7B49;&#x8BBE;&#x5B9A;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x79F0;&#x4E3A;&#x88C5;&#x914D;&#x3002;">&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x540E;&#xFF0C;&#x6B63;&#x5E38;&#x7684;&#x6D41;&#x7A0B;&#x662F;&#x5FAA;&#x73AF;&#x8FED;&#x4EE3;&#x6570;&#x636E;&#x96C6;&#x591A;&#x4E2A; Epoch&#xFF0C;&#x6BCF;&#x6B21;&#x6309;&#x6279;&#x4EA7;&#x751F;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x3001;&#x524D;  &#x5411;&#x8BA1; &#x7B97;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x8BEF;&#x5DEE;&#x503C;&#xFF0C;&#x5E76;&#x53CD;&#x5411;&#x4F20;&#x64AD;&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#x3001;&#x66F4;&#x65B0;&#x7F51;&#x7EDC;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E00;  &#x90E8;&#x5206; &#x903B;&#x8F91;&#x7531;&#x4E8E;&#x975E;&#x5E38;&#x901A;&#x7528;&#xFF0C;&#x5728; Keras &#x4E2D;&#x63D0;&#x4F9B;&#x4E86; compile()&#x548C; fit()&#x51FD;&#x6570;&#x65B9;&#x4FBF;&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x903B;&#x8F91;&#x3002;&#x9996;&#x5148;&#x901A;&#x8FC7; compile &#x51FD;&#x6570;&#x6307;&#x5B9A;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;&#x7684;&#x4F18;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x8BC4;&#x4EF7;&#x6307;&#x6807;&#x7B49;&#x8BBE;&#x5B9A;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x79F0;&#x4E3A;&#x88C5;&#x914D;&#x3002;</h1>
+<h1 id="&#x5BFC;&#x5165;&#x4F18;&#x5316;&#x5668;&#xFF0C;&#x635F;&#x5931;&#x51FD;&#x6570;&#x6A21;&#x5757;">&#x5BFC;&#x5165;&#x4F18;&#x5316;&#x5668;&#xFF0C;&#x635F;&#x5931;&#x51FD;&#x6570;&#x6A21;&#x5757;</h1>
+<p>from tensorflow.keras import optimizers,losses  </p>
+<h1 id="&#x6A21;&#x578B;&#x88C5;&#x914D;">&#x6A21;&#x578B;&#x88C5;&#x914D;</h1>
+<h1 id="&#x91C7;&#x7528;-adam-&#x4F18;&#x5316;&#x5668;&#xFF0C;&#x5B66;&#x4E60;&#x7387;&#x4E3A;-001&#x91C7;&#x7528;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5305;&#x542B;softmax">&#x91C7;&#x7528; Adam &#x4F18;&#x5316;&#x5668;&#xFF0C;&#x5B66;&#x4E60;&#x7387;&#x4E3A; 0.01;&#x91C7;&#x7528;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5305;&#x542B;Softmax</h1>
+<p>network.compile(optimizer=optimizers.Adam(lr=0.01),         loss=losses.CategoricalCrossentropy(from_logits=True), </p>
+<pre><code>    metrics=[&apos;accuracy&apos;] # &#x8BBE;&#x7F6E;&#x6D4B;&#x91CF;&#x6307;&#x6807;&#x4E3A;&#x51C6;&#x786E;&#x7387; 
+</code></pre><p>) 
+```</p>
+</li>
+<li><p>&#x6A21;&#x578B;&#x6D4B;&#x8BD5; </p>
+<ul>
+<li><p>Model &#x57FA;&#x7C7B;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x4FBF;&#x6377;&#x5730;&#x5B8C;&#x6210;&#x7F51;&#x7EDC;&#x7684;&#x88C5;&#x914D;&#x4E0E;&#x8BAD;&#x7EC3;&#x3001;&#x9A8C;&#x8BC1;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x7684;&#x9884;&#x6D4B;&#x548C; &#x6D4B;&#x8BD5;&#x3002;</p>
+</li>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x901A;&#x8FC7; Model.predict(x)&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x6A21;&#x578B;&#x7684;&#x9884;&#x6D4B;</span>
+<span class="hljs-comment"># &#x52A0;&#x8F7D;&#x4E00;&#x4E2A; batch &#x7684;&#x6D4B;&#x8BD5;&#x6570;&#x636E; </span>
+x,y = next(iter(db_test)) print(<span class="hljs-string">&apos;predict x:&apos;</span>, x.shape) <span class="hljs-comment"># &#x6253;&#x5370;&#x5F53;&#x524D; batch &#x7684;&#x5F62;&#x72B6; </span>
+out = network.predict(x) <span class="hljs-comment"># &#x6A21;&#x578B;&#x9884;&#x6D4B;&#xFF0C;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x4FDD;&#x5B58;&#x5728; out &#x4E2D; </span>
+print(out)
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x4E0E;&#x52A0;&#x8F7D;">&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x4E0E;&#x52A0;&#x8F7D;</h3>
+<ul>
+<li><p>&#x5F20;&#x91CF;&#x65B9;&#x5F0F;</p>
+</li>
+<li><pre><code class="lang-python"><span class="hljs-comment"># Model.save_weights(path)&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#x5C06;&#x5F53;&#x524D;&#x7684; &#x7F51;&#x7EDC;&#x53C2;&#x6570;&#x4FDD;&#x5B58;&#x5230; path &#x6587;&#x4EF6;&#x4E0A;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A; </span>
+network.save_weights(<span class="hljs-string">&apos;weights.ckpt&apos;</span>) <span class="hljs-comment"># &#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x5F20;&#x91CF;&#x6570;&#x636E; </span>
+<span class="hljs-comment"># &#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x5C06; network &#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x5230; weights.ckpt &#x6587;&#x4EF6;&#x4E0A;&#x3002;</span>
+
+<span class="hljs-comment"># &#x4F8B;&#x5B50;&#xFF1A;</span>
+<span class="hljs-comment"># &#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x5230;&#x6587;&#x4EF6;&#x4E0A; </span>
+network.save_weights(<span class="hljs-string">&apos;weights.ckpt&apos;</span>) print(<span class="hljs-string">&apos;saved weights.&apos;</span>) 
+<span class="hljs-keyword">del</span> network <span class="hljs-comment"># &#x5220;&#x9664;&#x7F51;&#x7EDC;&#x5BF9;&#x8C61; </span>
+<span class="hljs-comment"># &#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x76F8;&#x540C;&#x7684;&#x7F51;&#x7EDC;&#x7ED3;&#x6784; </span>
+network = Sequential([layers.Dense(<span class="hljs-number">256</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                      layers.Dense(<span class="hljs-number">128</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                      
+   layers.Dense(<span class="hljs-number">64</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                           
+   layers.Dense(<span class="hljs-number">32</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>),                      
+    layers.Dense(<span class="hljs-number">10</span>)])
+network.compile(optimizer=optimizers.Adam(lr=<span class="hljs-number">0.01</span>),                                 loss=tf.losses.CategoricalCrossentropy(from_logits=<span class="hljs-keyword">True</span>),        
+        metrics=[<span class="hljs-string">&apos;accuracy&apos;</span>])  
+<span class="hljs-comment"># &#x4ECE;&#x53C2;&#x6570;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E76;&#x5199;&#x5165;&#x5F53;&#x524D;&#x7F51;&#x7EDC; </span>
+network.load_weights(<span class="hljs-string">&apos;weights.ckpt&apos;</span>) 
+print(<span class="hljs-string">&apos;loaded weights!&apos;</span>)
+</code></pre>
+</li>
+<li><p>&#x7F51;&#x7EDC;&#x65B9;&#x5F0F; </p>
+<ul>
+<li>&#x901A;&#x8FC7; Model.save(path) &#x51FD;&#x6570;&#x5C06;&#x6A21;&#x578B;&#x7684;&#x7ED3;&#x6784;&#x53CA;&#x5176;&#x53C2;&#x6570;&#x4FDD;&#x5B58;&#x5230;path&#x8DEF;&#x5F84;</li>
+<li>keras.models.load_model(path)  &#x51FD;&#x6570;&#x5C06;&#x6A21;&#x578B;&#x7684;&#x7ED3;&#x6784;&#x53CA;&#x5176;&#x53C2;&#x6570;&#x6062;&#x590D;</li>
+</ul>
+</li>
+<li><p>SavedModel &#x65B9;&#x5F0F; </p>
+<ul>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x7ED3;&#x6784;&#x4E0E;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x5230;&#x6587;&#x4EF6; </span>
+tf.saved_model.save(network, <span class="hljs-string">&apos;model-savedmodel&apos;</span>) 
+print(<span class="hljs-string">&apos;saving savedmodel.&apos;</span>) 
+<span class="hljs-keyword">del</span> network <span class="hljs-comment"># &#x5220;&#x9664;&#x7F51;&#x7EDC;&#x5BF9;&#x8C61;</span>
+print(<span class="hljs-string">&apos;load savedmodel from file.&apos;</span>) <span class="hljs-comment"># &#x4ECE;&#x6587;&#x4EF6;&#x6062;&#x590D;&#x7F51;&#x7EDC;&#x7ED3;&#x6784;&#x4E0E;&#x7F51;&#x7EDC;&#x53C2;&#x6570; </span>
+network =  tf.saved_model.load(<span class="hljs-string">&apos;model-savedmodel&apos;</span>) <span class="hljs-comment"># &#x51C6;&#x786E;&#x7387;&#x8BA1;&#x91CF;&#x5668;  </span>
+acc_meter = metrics.CategoricalAccuracy()  <span class="hljs-keyword">for</span> x,y <span class="hljs-keyword">in</span> ds_val:  <span class="hljs-comment"># &#x904D;&#x5386;&#x6D4B;&#x8BD5;&#x96C6;</span>
+   pred = network(x) <span class="hljs-comment"># &#x524D;&#x5411;&#x8BA1;&#x7B97;     </span>
+   acc_meter.update_state(y_true=y, y_pred=pred) <span class="hljs-comment"># &#x66F4;&#x65B0;&#x51C6;&#x786E;&#x7387;&#x7EDF;&#x8BA1;</span>
+   <span class="hljs-comment"># &#x6253;&#x5370;&#x51C6;&#x786E;&#x7387; </span>
+print(<span class="hljs-string">&quot;Test Accuracy:%f&quot;</span> % acc_meter.result())
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x5C42;">&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x5C42;</h3>
+<ul>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x901A;&#x8FC7; Sequential &#x5BB9;&#x5668;&#x65B9;&#x4FBF;&#x5730;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x6A21; &#x578B;</span>
+network = Sequential([
+MyDense(<span class="hljs-number">784</span>, <span class="hljs-number">256</span>), <span class="hljs-comment"># &#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5C42;      </span>
+MyDense(<span class="hljs-number">256</span>, <span class="hljs-number">128</span>),                      
+MyDense(<span class="hljs-number">128</span>, <span class="hljs-number">64</span>),                     
+MyDense(<span class="hljs-number">64</span>, <span class="hljs-number">32</span>),                     
+MyDense(<span class="hljs-number">32</span>, <span class="hljs-number">10</span>)])
+network.build(input_shape=(<span class="hljs-keyword">None</span>, <span class="hljs-number">28</span>*<span class="hljs-number">28</span>)) 
+network.summary() 
+
+<span class="hljs-comment"># &#x6765;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyModel</span><span class="hljs-params">(keras.Model)</span>:</span> 
+    <span class="hljs-comment"># &#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;&#x81EA; Model &#x57FA;&#x7C7B;     </span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>         
+        super(MyModel, self).__init__() 
+        <span class="hljs-comment"># &#x5B8C;&#x6210;&#x7F51;&#x7EDC;&#x5185;&#x9700;&#x8981;&#x7684;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;         </span>
+        self.fc1 = MyDense(<span class="hljs-number">28</span>*<span class="hljs-number">28</span>, <span class="hljs-number">256</span>)         
+        self.fc2 = MyDense(<span class="hljs-number">256</span>, <span class="hljs-number">128</span>)         
+        self.fc3 = MyDense(<span class="hljs-number">128</span>, <span class="hljs-number">64</span>) 
+        self.fc4 = MyDense(<span class="hljs-number">64</span>, <span class="hljs-number">32</span>) 
+        self.fc5 = MyDense(<span class="hljs-number">32</span>, <span class="hljs-number">10</span>) 
+
+ <span class="hljs-comment"># &#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x7684;&#x524D;&#x5411;&#x8FD0;&#x7B97;&#x903B;</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">call</span><span class="hljs-params">(self, inputs, training=None)</span>:</span> 
+        <span class="hljs-comment"># &#x81EA;&#x5B9A;&#x4E49;&#x524D;&#x5411;&#x8FD0;&#x7B97;&#x903B;&#x8F91;         </span>
+        x = self.fc1(inputs)          
+        x = self.fc2(x)          
+        x = self.fc3(x)          
+        x = self.fc4(x)          
+        x = self.fc5(x)  
+        <span class="hljs-keyword">return</span> x
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x6D4B;&#x91CF;&#x5DE5;&#x5177;">&#x6D4B;&#x91CF;&#x5DE5;&#x5177;</h3>
+<ul>
+<li><p>Keras &#x7684;&#x6D4B;&#x91CF;&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E00;&#x822C;&#x6709; 4 &#x4E2A;&#x4E3B;&#x8981;&#x6B65;&#x9AA4;&#xFF1A;&#x65B0;&#x5EFA;&#x6D4B;&#x91CF;&#x5668;&#xFF0C;&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x8BFB;&#x53D6;&#x7EDF; &#x8BA1;&#x6570;&#x636E;&#x548C;&#x6E05;&#x96F6;&#x6D4B;&#x91CF;&#x5668;&#x3002; </p>
+</li>
+<li><pre><code class="lang-python"><span class="hljs-comment"># &#x7EDF;&#x8BA1;&#x8BEF;&#x5DEE;&#x503C;</span>
+<span class="hljs-comment">#  &#x65B0;&#x5EFA;&#x6D4B;&#x91CF;&#x5668; ,&#x5728; keras.metrics &#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x8F83;&#x591A;&#x7684;&#x5E38;&#x7528;&#x6D4B;&#x91CF;&#x5668;&#x7C7B;&#xFF0C;&#x5982;&#x7EDF;&#x8BA1;&#x5E73;&#x5747;&#x503C;&#x7684; Mean &#x7C7B;&#xFF0C;&#x7EDF; &#x8BA1;&#x51C6;&#x786E;&#x7387;&#x7684; Accuracy &#x7C7B;&#xFF0C;&#x7EDF;&#x8BA1;&#x4F59;&#x5F26;&#x76F8;&#x4F3C;&#x5EA6;&#x7684; CosineSimilarity &#x7C7B;&#x7B49;</span>
+<span class="hljs-comment"># &#x65B0;&#x5EFA;&#x5E73;&#x5747;&#x6D4B;&#x91CF;&#x5668;&#xFF0C;&#x9002;&#x5408; Loss &#x6570;&#x636E; </span>
+loss_meter = metrics.Mean() 
+
+<span class="hljs-comment"># &#x5199;&#x5165;&#x6570;&#x636E; </span>
+<span class="hljs-comment"># &#x8BB0;&#x5F55;&#x91C7;&#x6837;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x901A;&#x8FC7; float()&#x51FD;&#x6570;&#x5C06;&#x5F20;&#x91CF;&#x8F6C;&#x6362;&#x4E3A;&#x666E;&#x901A;&#x6570;&#x503C; </span>
+loss_meter.update_state(float(loss)) 
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F; </span>
+<span class="hljs-comment"># &#x6253;&#x5370;&#x7EDF;&#x8BA1;&#x671F;&#x95F4;&#x7684;&#x5E73;&#x5747; loss </span>
+print(step, <span class="hljs-string">&apos;loss:&apos;</span>, loss_meter.result()) 
+
+<span class="hljs-comment">#  &#x6E05;&#x9664;&#x72B6;&#x6001; </span>
+ <span class="hljs-keyword">if</span> step % <span class="hljs-number">100</span> == <span class="hljs-number">0</span>: 
+        <span class="hljs-comment"># &#x6253;&#x5370;&#x7EDF;&#x8BA1;&#x7684;&#x5E73;&#x5747; loss         </span>
+        print(step, <span class="hljs-string">&apos;loss:&apos;</span>, loss_meter.result())  
+        loss_meter.reset_states() <span class="hljs-comment"># &#x6253;&#x5370;&#x5B8C;&#x540E;&#xFF0C;&#x6E05;&#x96F6;&#x6D4B;&#x91CF;&#x5668; </span>
+
+ <span class="hljs-comment">####################################################################</span>
+
+<span class="hljs-comment"># &#x7EDF;&#x8BA1;&#x51C6;&#x786E;&#x7387;</span>
+acc_meter = metrics.Accuracy() <span class="hljs-comment"># &#x521B;&#x5EFA;&#x51C6;&#x786E;&#x7387;&#x6D4B;&#x91CF;&#x5668; </span>
+
+<span class="hljs-comment"># &#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;Accuracy &#x7C7B;&#x7684; update_state &#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E3A;&#x9884;&#x6D4B;&#x503C;&#x548C;&#x771F;&#x5B9E;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5F53;&#x524D; Batch &#x7684;&#x51C6;&#x786E;&#x7387;&#x3002;</span>
+ <span class="hljs-comment"># [b, 784] =&gt; [b, 10]&#xFF0C;&#x7F51;&#x7EDC;&#x8F93;&#x51FA;&#x503C;             </span>
+ out = network(x)  
+ <span class="hljs-comment"># [b, 10] =&gt; [b]&#xFF0C;&#x7ECF;&#x8FC7; argmax &#x540E;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;             </span>
+ pred = tf.argmax(out, axis=<span class="hljs-number">1</span>)              
+ pred = tf.cast(pred, dtype=tf.int32) 
+ <span class="hljs-comment"># &#x6839;&#x636E;&#x9884;&#x6D4B;&#x503C;&#x4E0E;&#x771F;&#x5B9E;&#x503C;&#x5199;&#x5165;&#x6D4B;&#x91CF;&#x5668; </span>
+ acc_meter.update_state(y, pred)
+ <span class="hljs-comment"># &#x8BFB;&#x53D6;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;        </span>
+ print(step, <span class="hljs-string">&apos;Evaluate Acc:&apos;</span>, 
+ acc_meter.result().numpy()) 
+ acc_meter.reset_states() <span class="hljs-comment"># &#x6E05;&#x96F6;&#x6D4B;&#x91CF;&#x5668;</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x8FC7;&#x62DF;&#x5408;">&#x8FC7;&#x62DF;&#x5408;</h2>
+<ul>
+<li><p>Early stopping     &#x6B63;&#x5219;&#x5316;       Dropout      </p>
+</li>
+<li><p>&#x6570;&#x636E;&#x589E;&#x5F3A;&#xFF08; &#x65CB;&#x8F6C; &#xFF0C; &#x7FFB;&#x8F6C; &#xFF0C;&#x88C1;&#x526A; &#xFF09;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="《TensorFlow深度学习》笔记（一）.html" class="navigation navigation-prev " aria-label="Previous page: 《TensorFlow深度学习》笔记（一）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="《TensorFlow深度学习》笔记（三）.html" class="navigation navigation-next " aria-label="Next page: 《TensorFlow深度学习》笔记（三）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"《TensorFlow深度学习》笔记（二）","level":"1.2.2","depth":2,"next":{"title":"《TensorFlow深度学习》笔记（三）","level":"1.2.3","depth":2,"path":"Tensorflow学习/《TensorFlow深度学习》笔记（三）.md","ref":"Tensorflow学习/《TensorFlow深度学习》笔记（三）.md","articles":[]},"previous":{"title":"《TensorFlow深度学习》笔记（一）","level":"1.2.1","depth":2,"path":"Tensorflow学习/《TensorFlow深度学习》笔记（一）.md","ref":"Tensorflow学习/《TensorFlow深度学习》笔记（一）.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tensorflow学习/《TensorFlow深度学习》笔记（二）.md","mtime":"2020-02-11T03:35:51.224Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-17T13:47:20.108Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

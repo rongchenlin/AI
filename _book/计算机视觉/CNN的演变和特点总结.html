@@ -1,0 +1,472 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CNN的演变和特点总结 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="目标检测.html" />
+    
+    
+    <link rel="prev" href="计算机视觉.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    人工智能学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Tensorflow学习/Tensorflow学习.html">
+            
+                <a href="../Tensorflow学习/Tensorflow学习.html">
+            
+                    
+                    Tensorflow学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Tensorflow学习/《TensorFlow深度学习》笔记（一）.html">
+            
+                <a href="../Tensorflow学习/《TensorFlow深度学习》笔记（一）.html">
+            
+                    
+                    《TensorFlow深度学习》笔记（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Tensorflow学习/《TensorFlow深度学习》笔记（二）.html">
+            
+                <a href="../Tensorflow学习/《TensorFlow深度学习》笔记（二）.html">
+            
+                    
+                    《TensorFlow深度学习》笔记（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Tensorflow学习/《TensorFlow深度学习》笔记（三）.html">
+            
+                <a href="../Tensorflow学习/《TensorFlow深度学习》笔记（三）.html">
+            
+                    
+                    《TensorFlow深度学习》笔记（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Tensorflow学习/TensorFlow常用函数.html">
+            
+                <a href="../Tensorflow学习/TensorFlow常用函数.html">
+            
+                    
+                    TensorFlow常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../自然语言处理/自然语言处理.html">
+            
+                <a href="../自然语言处理/自然语言处理.html">
+            
+                    
+                    自然语言处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../自然语言处理/NLP简介.html">
+            
+                <a href="../自然语言处理/NLP简介.html">
+            
+                    
+                    NLP简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../自然语言处理/常见的神经网络模型.html">
+            
+                <a href="../自然语言处理/常见的神经网络模型.html">
+            
+                    
+                    常见的神经网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../自然语言处理/实践NLP项目.html">
+            
+                <a href="../自然语言处理/实践NLP项目.html">
+            
+                    
+                    实践NLP项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="计算机视觉.html">
+            
+                <a href="计算机视觉.html">
+            
+                    
+                    计算机视觉
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="CNN的演变和特点总结.html">
+            
+                <a href="CNN的演变和特点总结.html">
+            
+                    
+                    CNN的演变和特点总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="目标检测.html">
+            
+                <a href="目标检测.html">
+            
+                    
+                    目标检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="MobileNet网络.html">
+            
+                <a href="MobileNet网络.html">
+            
+                    
+                    MobileNet网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="媒体识别和理解.html">
+            
+                <a href="媒体识别和理解.html">
+            
+                    
+                    媒体识别和理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../数据挖掘/数据挖掘简介.html">
+            
+                <a href="../数据挖掘/数据挖掘简介.html">
+            
+                    
+                    数据挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../推荐系统/推荐系统简介.html">
+            
+                <a href="../推荐系统/推荐系统简介.html">
+            
+                    
+                    推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CNN的演变和特点总结</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="cnn&#x7684;&#x6F14;&#x53D8;&#x548C;&#x7279;&#x70B9;&#x603B;&#x7ED3;">CNN&#x7684;&#x6F14;&#x53D8;&#x548C;&#x7279;&#x70B9;&#x603B;&#x7ED3;</h2>
+<h3 id="lenet"><a href="https://blog.csdn.net/qq_42570457/article/details/81460807" target="_blank">LeNet</a></h3>
+<p> LeNet-5&#x662F;&#x4E00;&#x4E2A;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x5377;&#x79EF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x3002;&#x4E0B;&#x56FE;&#x663E;&#x793A;&#x4E86;&#x5176;&#x7ED3;&#x6784;&#xFF1A;&#x8F93;&#x5165;&#x7684;&#x4E8C;&#x7EF4;&#x56FE;&#x50CF;&#xFF0C;&#x5148;&#x7ECF;&#x8FC7;&#x4E24;&#x6B21;&#x5377;&#x79EF;&#x5C42;&#x5230;&#x6C60;&#x5316;&#x5C42;&#xFF0C;&#x518D;&#x7ECF;&#x8FC7;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#xFF0C;&#x6700;&#x540E;&#x4F7F;&#x7528;softmax&#x5206;&#x7C7B;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x5C42;&#x3002;<img src="../Image/image-20210411135233665.png" alt="image-20210411135233665" style="zoom:67%;"></p>
+<h3 id="vggnet"><a href="https://zhuanlan.zhihu.com/p/79258431" target="_blank">VGGNet</a></h3>
+<p>VGG16&#x76F8;&#x6BD4;AlexNet&#x7684;&#x4E00;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#xFF0C;<strong>&#x91C7;&#x7528;&#x8FDE;&#x7EED;&#x7684;&#x51E0;&#x4E2A;3x3&#x7684;&#x5377;&#x79EF;&#x6838;&#xFF08;&#x6B65;&#x957F;=1&#xFF0C;padding=0&#xFF09;&#xFF0C;&#x4EE3;&#x66FF;AlexNet&#x4E2D;&#x7684;&#x8F83;&#x5927;&#x5377;&#x79EF;&#x6838;&#xFF08;11x11&#xFF0C;7x7&#xFF0C;5x5&#xFF09;</strong></p>
+<h3 id="resnet&#x3001;&#x89E3;&#x8BFB;"><a href="https://blog.csdn.net/sunny_yeah_/article/details/89430124" target="_blank">ResNet</a>&#x3001;<a href="https://blog.csdn.net/lanran2/article/details/79057994" target="_blank">&#x89E3;&#x8BFB;</a></h3>
+<h3 id="mobilenet"><a href="https://blog.csdn.net/u010712012/article/details/94888053" target="_blank">MobileNet</a></h3>
+<h3 id="resnet&#x3001;alexnex&#x3001;&#x8BBA;&#x6587;&#x89E3;&#x8BFB;">ResNet&#x3001;<a href="https://blog.csdn.net/u012679707/article/details/80793916" target="_blank">AlexNex</a>&#x3001;<a href="https://blog.csdn.net/luoluonuoyasuolong/article/details/81750190" target="_blank">&#x8BBA;&#x6587;&#x89E3;&#x8BFB;</a></h3>
+<p><strong>&#x4EC0;&#x4E48;&#x662F;ResNet</strong></p>
+<p>ResNet&#x662F;&#x4E00;&#x79CD;<u>&#x6B8B;&#x5DEE;&#x7F51;&#x7EDC;</u>&#xFF0C;&#x54B1;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x4E2A;&#x5B50;&#x7F51;&#x7EDC;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B50;&#x7F51;&#x7EDC;&#x7ECF;&#x8FC7;&#x5806;&#x53E0;&#x53EF;&#x4EE5;&#x6784;&#x6210;&#x4E00;&#x4E2A;&#x5F88;&#x6DF1;&#x7684;&#x7F51;&#x7EDC;&#x3002;&#x54B1;&#x4EEC;&#x53EF;&#x4EE5;&#x5148;&#x7B80;&#x5355;&#x770B;&#x4E00;&#x4E0B;ResNet&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4E4B;&#x540E;&#x4F1A;&#x5BF9;&#x5B83;&#x7684;&#x7ED3;&#x6784;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;
+<img src="../Image/20190421104200697-16292071024281.png" alt="ResNet&#x5757;"></p>
+<p><strong>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5F15;&#x5165;ResNet&#xFF1F;</strong>
+&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x7F51;&#x7EDC;&#x8D8A;&#x6DF1;&#xFF0C;&#x54B1;&#x4EEC;&#x80FD;&#x83B7;&#x53D6;&#x7684;&#x4FE1;&#x606F;&#x8D8A;&#x591A;&#xFF0C;&#x800C;&#x4E14;&#x7279;&#x5F81;&#x4E5F;&#x8D8A;&#x4E30;&#x5BCC;&#x3002;&#x4F46;&#x662F;&#x6839;&#x636E;&#x5B9E;&#x9A8C;&#x8868;&#x660E;&#xFF0C;&#x968F;&#x7740;&#x7F51;&#x7EDC;&#x7684;&#x52A0;&#x6DF1;&#xFF0C;&#x4F18;&#x5316;&#x6548;&#x679C;&#x53CD;&#x800C;&#x8D8A;&#x5DEE;&#xFF0C;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x7684;&#x51C6;&#x786E;&#x7387;&#x53CD;&#x800C;&#x964D;&#x4F4E;&#x4E86;&#x3002;<strong>&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x7684;&#x52A0;&#x6DF1;&#x4F1A;&#x9020;&#x6210;&#x68AF;&#x5EA6;&#x7206;&#x70B8;&#x548C;&#x68AF;&#x5EA6;&#x6D88;&#x5931;&#x7684;&#x95EE;&#x9898;</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="计算机视觉.html" class="navigation navigation-prev " aria-label="Previous page: 计算机视觉">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="目标检测.html" class="navigation navigation-next " aria-label="Next page: 目标检测">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CNN的演变和特点总结","level":"1.4.1","depth":2,"next":{"title":"目标检测","level":"1.4.2","depth":2,"path":"计算机视觉/目标检测.md","ref":"计算机视觉/目标检测.md","articles":[]},"previous":{"title":"计算机视觉","level":"1.4","depth":1,"path":"计算机视觉/计算机视觉.md","ref":"计算机视觉/计算机视觉.md","articles":[{"title":"CNN的演变和特点总结","level":"1.4.1","depth":2,"path":"计算机视觉/CNN的演变和特点总结.md","ref":"计算机视觉/CNN的演变和特点总结.md","articles":[]},{"title":"目标检测","level":"1.4.2","depth":2,"path":"计算机视觉/目标检测.md","ref":"计算机视觉/目标检测.md","articles":[]},{"title":"MobileNet网络","level":"1.4.3","depth":2,"path":"计算机视觉/MobileNet网络.md","ref":"计算机视觉/MobileNet网络.md","articles":[]},{"title":"媒体识别和理解","level":"1.4.4","depth":2,"path":"计算机视觉/媒体识别和理解.md","ref":"计算机视觉/媒体识别和理解.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"计算机视觉/CNN的演变和特点总结.md","mtime":"2021-08-17T13:32:11.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-17T13:47:05.494Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
